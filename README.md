@@ -11,26 +11,26 @@ A simple comments plugin for vuepress
 With `npm`:
 
 ```bash
-npm install --save @staugur/vuepress-plugin-utterances
+npm install --save @saintic/vuepress-plugin-utterances
 ```
 
 With `yarn`:
 
 ```bash
-yarn add @staugur/vuepress-plugin-utterances -D
+yarn add @saintic/vuepress-plugin-utterances -D
 ```
 
 With `cnpm`:
 
 ```bash
-cnpm i --save @staugur/vuepress-plugin-utterances
+cnpm i --save @saintic/vuepress-plugin-utterances
 ```
 
 ## 使用
 
 ### 名称
 
-- **As plugin**: `@staugur/vuepress-plugin-utterances`
+- **As plugin**: `@saintic/vuepress-plugin-utterances`
 
 - **As component**: `Comments (评论)` （主题开发时使用 <- 本人未测试）
 
@@ -54,7 +54,7 @@ cnpm i --save @staugur/vuepress-plugin-utterances
   module.exports = {
     plugins: [
       [
-       '@staugur/utterances',
+       '@saintic/utterances',
         {
           repo: 'staugur/staugur.github.io',
           theme: 'github-light',
@@ -70,7 +70,7 @@ cnpm i --save @staugur/vuepress-plugin-utterances
   ```javascript
   module.exports = {
     plugins: {
-      '@staugur/utterances': {
+      '@saintic/utterances': {
         repo: 'staugur/staugur.github.io',
       }
     }

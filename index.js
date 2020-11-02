@@ -6,6 +6,6 @@ module.exports = (pluginOptions, context) => ({
             COMMENTS_OPTIONS: pluginOptions || {}
         }
     },
-    name: '@staugur/vuepress-plugin-utterances',
+    name: '@saintic/vuepress-plugin-utterances',
     enhanceAppFiles: [path.resolve(__dirname, './utterances/enhanceAppFile.js')]
 })
