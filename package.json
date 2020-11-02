@@ -1,0 +1,20 @@
+{
+    "name": "@staugur/vuepress-plugin-utterances",
+    "author": "staugur <me@tcw.im>",
+    "version": "0.1.0",
+    "description": "A simple comments plugin for vuepress",
+    "main": "index.js",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "comments",
+        "vuepress"
+    ],
+    "homepage": "https://github.com/staugur/vuepress-plugin-utterances",
+    "bugs": {
+        "url": "https://github.com/staugur/vuepress-plugin-utterances/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/staugur/vuepress-plugin-utterances.git"
+    }
+}
