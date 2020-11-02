@@ -2,11 +2,15 @@
 
 A simple comments plugin for vuepress
 
-> 参考 [@ido-design/vuepress-plugin-comments](https://github.com/Timi-design/vuepress-plugin-timi/tree/master/vuepress-plugin-comments)实现的[utterances](https://utteranc.es/)评论框。
->
-> ps：水平有限，可能有一些解决不了的bug，慎用~~
+> English | [中文](README-cn.md)
 
-## 安装
+---
+
+> Refer to [utterances](https://utteranc.es/) implemented by [@ido-design/vuepress-plugin-comments](https://github.com/Timi-design/vuepress-plugin-timi/tree/master/vuepress-plugin-comments)
+>
+> ps: The level is limited, there may be some bugs that cannot be solved, use it with caution~~
+
+## Install
 
 With `npm`:
 
@@ -26,29 +30,29 @@ With `cnpm`:
 cnpm i --save @saintic/vuepress-plugin-utterances
 ```
 
-## 使用
+## Usage
 
-### 名称
+### Name
 
 - **As plugin**: `@saintic/vuepress-plugin-utterances`
 
-- **As component**: `Comments (评论)` （主题开发时使用 <- 本人未测试）
+- **As component**: `Comments` (theme development using <- I did not test)
 
-### 选项
+### Options
 
-> 请先了解 [Utterances](https://utteranc.es) 这款基于GitHub Issue的评论系统。
+> Please learn about [Utterances](https://utteranc.es), a GitHub issue based review system.
 
-|  选项名 | 必填 |  含义              |  默认值       |  对应Utterances配置项目 |
-| ------ | ----|--------------------| ------------ | ----------------------|
-|  repo  |  是  |  GitHub仓库地址     | (无)         | Repository |
-|  theme |  否  |  主题 | Theme       | github-light| Theme|
-|  issueTerm |否|  文章与Issue的映射条件 | pathname   | Blog Post ↔️ Issue Mapping |
+|  Option name | Required|  Utterances configuration|  Default value |
+| ------------ | -------|---------------------------| ---------------|
+|  repo        |   yes  |  GitHub Repository        | \         | 
+|  theme       |   no   |  Theme value              | github-light|
+|  issueTerm   |   no   |  Blog Post ↔️ Issue Mapping| pathname |
 
-### 示例
+### Examples
 
-> 请先参考 [Vuepress如何使用插件](https://vuepress.vuejs.org/zh/plugin/using-a-plugin.html)
+> Please refer to [how vuexpress uses plugins first](https://vuepress.vuejs.org/plugin/using-a-plugin.html)
 
-- Babel 式
+- Babel Style
 
   ```javascript
   module.exports = {
@@ -65,7 +69,7 @@ cnpm i --save @saintic/vuepress-plugin-utterances
   }
   ```
 
-- 对象式
+- Object Style
 
   ```javascript
   module.exports = {
@@ -77,6 +81,6 @@ cnpm i --save @saintic/vuepress-plugin-utterances
   }
   ```
 
-## 演示站
+## Demo site
 
-- [My blog](https://blog.saintic.com)
+- [My blog](https://tcw.im)

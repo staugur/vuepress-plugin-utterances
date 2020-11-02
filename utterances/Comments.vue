@@ -25,9 +25,6 @@ export default {
                 return fsc !== false
             }
         }
-    },
-    mounted() {
-        console.log('mounted comment')
     }
 }
 </script>
