@@ -44,9 +44,26 @@ cnpm i --save @saintic/vuepress-plugin-utterances
 
 |  Option name | Required|  Utterances configuration|  Default value |
 | ------------ | -------|---------------------------| ---------------|
-|  repo        |   yes  |  GitHub Repository        | \         | 
-|  theme       |   no   |  Theme value              | github-light|
-|  issueTerm   |   no   |  Blog Post ↔️ Issue Mapping| pathname |
+|  repo        |   yes  |  GitHub Repository        | \            |
+|  theme       |   no   |  Theme value              | github-light |
+|  issueTerm   |   no   |  Blog Post ↔️ Issue Mapping| pathname     |
+| defaultShowComment| no|  Show comments by default |              |
+
+### Page `frontmatter`
+
+> **showComment** <Boolean> A single post page display comments
+
+- If the `defaultShowComment` is true (i.e. the default),
+  all article details pages will display comments by default.
+
+  Set this `showComment` to false to turn off comments on an article.
+
+- If the `defaultShowComment` is false, all article details pages will
+  not be displayed by default.
+
+  Set this `showComment` to true, you can open comments on an article separately.
+
+PS: by the way, comments are not allowed on the index page(/).
 
 ### Examples
 
@@ -76,6 +93,7 @@ cnpm i --save @saintic/vuepress-plugin-utterances
     plugins: {
       '@saintic/utterances': {
         repo: 'staugur/staugur.github.io',
+        defaultShowComment: false
       }
     }
   }

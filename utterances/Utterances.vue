@@ -27,8 +27,9 @@ export default {
     },
     methods: {
         initUtterances() {
+            let dom = window.document.getElementById('utterances')
             if (!this.repo) {
-                console.error('Not found a repo for issue')
+                dom.innerHTML = '<b>Not found a repo for issue</b>'
                 return
             }
             let utterances = window.document.createElement('script')
@@ -39,7 +40,10 @@ export default {
             utterances.setAttribute('repo', this.repo)
             utterances.crossorigin = 'anonymous'
             utterances.src = 'https://utteranc.es/client.js'
-            window.document.getElementById('utterances').appendChild(utterances)
+            if (dom.hasChildNodes()) {
+                dom.innerHTML = ''
+            }
+            dom.appendChild(utterances)
         }
     },
     mounted() {

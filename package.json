@@ -1,10 +1,13 @@
 {
     "name": "@saintic/vuepress-plugin-utterances",
     "author": "staugur <me@tcw.im>",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "A simple comments plugin for vuepress",
     "main": "index.js",
     "license": "BSD-3-Clause",
+    "scripts": {
+        "publish": "npm publish --registry http://registry.npmjs.org --access public"
+    },
     "keywords": [
         "comments",
         "vuepress"

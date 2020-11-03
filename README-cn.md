@@ -47,6 +47,19 @@ cnpm i --save @saintic/vuepress-plugin-utterances
 |  repo  |  是  |  GitHub仓库地址     | \            | Repository |
 |  theme |  否  |  主题               | github-light | Theme|
 |  issueTerm |否|  文章与Issue的映射条件 | pathname   | Blog Post ↔️ Issue Mapping |
+| defaultShowComment|否|默认显示评论     | (无，但默认显示)| \ |
+
+### Page `frontmatter`
+
+> **showComment** <Boolean> 单个文章页面是否显示评论
+
+- 如果选项中 `defaultShowComment` 是true(即默认)，则全部文章详情页默认显示评论，
+  此 `showComment` 设为false，可关闭某个文章的评论。
+
+- 如果选项中 `defaultShowComment` 是false，则全部文章详情页默认不显示，
+  此 `showComment` 设为true，可单独开启某个文章的评论。
+
+PS: 顺道一提，首页限定不显示评论。
 
 ### 示例
 
@@ -76,6 +89,7 @@ cnpm i --save @saintic/vuepress-plugin-utterances
     plugins: {
       '@saintic/utterances': {
         repo: 'staugur/staugur.github.io',
+        defaultShowComment: false
       }
     }
   }
