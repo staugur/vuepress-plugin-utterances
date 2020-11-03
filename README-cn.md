@@ -51,7 +51,7 @@ cnpm i --save @saintic/vuepress-plugin-utterances
 
 ### Page `frontmatter`
 
-> **showComment** <Boolean> 单个文章页面是否显示评论
+> **showComment** {Boolean}: 单个文章页面是否显示评论
 
 - 如果选项中 `defaultShowComment` 是true(即默认)，则全部文章详情页默认显示评论，
   此 `showComment` 设为false，可关闭某个文章的评论。

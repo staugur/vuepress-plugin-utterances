@@ -51,7 +51,7 @@ cnpm i --save @saintic/vuepress-plugin-utterances
 
 ### Page `frontmatter`
 
-> **showComment** <Boolean> A single post page display comments
+> **showComment** {Boolean}: A single post page display comments
 
 - If the `defaultShowComment` is true (i.e. the default),
   all article details pages will display comments by default.
