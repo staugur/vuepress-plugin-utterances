@@ -6,9 +6,11 @@ A simple comments plugin for vuepress
 
 ---
 
-> Refer to [utterances](https://utteranc.es/) implemented by [@ido-design/vuepress-plugin-comments](https://github.com/Timi-design/vuepress-plugin-timi/tree/master/vuepress-plugin-comments)
+> Refer to [utterances](https://utteranc.es/) implemented by [@Timi-design/vuepress-plugin-comments](https://github.com/Timi-design/vuepress-plugin-timi/tree/master/vuepress-plugin-comments), also supports [Beaudar](https://beaudar.lipk.org/)
 >
 > ps: The level is limited, there may be some bugs that cannot be solved, use it with caution~~
+>
+> ps: Beaudar can be regarded as the Chinese version of Utterances
 
 ## Install
 
@@ -47,7 +49,8 @@ cnpm i --save @saintic/vuepress-plugin-utterances
 |  repo        |   yes  |  GitHub Repository        | \            |
 |  theme       |   no   |  Theme value              | github-light |
 |  issueTerm   |   no   |  Blog Post ↔️ Issue Mapping| pathname     |
-| defaultShowComment| no|  Show comments by default |              |
+| defaultShowComment| no|  Show comments by default | true         |
+| service |no|Service provider: utterances/[beaudar](https://beaudar.lipk.org)|utterances|
 
 ### Page `frontmatter`
 

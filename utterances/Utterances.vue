@@ -1,6 +1,6 @@
 <template>
     <div class="utterances-wrapper">
-        <div id="utterances"></div>
+        <div id="v-utterances-comment"></div>
     </div>
 </template>
 
@@ -16,18 +16,25 @@ export default {
         }
     },
     data() {
-        let { issueTerm = 'pathname', theme = 'github-light', repo } = {
+        let {
+            issueTerm = 'pathname',
+            theme = 'github-light',
+            service = 'utterances',
+            repo
+        } = {
             ...this.options
         }
         return {
             issueTerm,
             theme,
+            service,
             repo
         }
     },
     methods: {
         initUtterances() {
-            let dom = window.document.getElementById('utterances')
+            let id = 'v-utterances-comment'
+            let dom = window.document.getElementById(id)
             if (!this.repo) {
                 dom.innerHTML = '<b>Not found a repo for issue</b>'
                 return
@@ -39,7 +46,10 @@ export default {
             utterances.setAttribute('theme', this.theme)
             utterances.setAttribute('repo', this.repo)
             utterances.crossorigin = 'anonymous'
-            utterances.src = 'https://utteranc.es/client.js'
+            utterances.src =
+                this.service === 'beaudar'
+                    ? 'https://beaudar.lipk.org/client.js'
+                    : 'https://utteranc.es/client.js'
             if (dom.hasChildNodes()) {
                 dom.innerHTML = ''
             }

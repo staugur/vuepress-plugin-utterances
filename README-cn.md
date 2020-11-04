@@ -6,9 +6,11 @@ A simple comments plugin for vuepress
 
 ---
 
-> 参考 [@ido-design/vuepress-plugin-comments](https://github.com/Timi-design/vuepress-plugin-timi/tree/master/vuepress-plugin-comments)实现的[utterances](https://utteranc.es/)评论框。
+> 参考 [@Timi-design/vuepress-plugin-comments](https://github.com/Timi-design/vuepress-plugin-timi/tree/master/vuepress-plugin-comments)实现的[utterances](https://utteranc.es/)评论框，同时支持 [Beaudar - 表达](https://beaudar.lipk.org/)
 >
 > ps：水平有限，可能有一些解决不了的bug，慎用~~
+>
+> ps: Beaudar可以视作Utterances中文版
 
 ## 安装
 
@@ -47,7 +49,8 @@ cnpm i --save @saintic/vuepress-plugin-utterances
 |  repo  |  是  |  GitHub仓库地址     | \            | Repository |
 |  theme |  否  |  主题               | github-light | Theme|
 |  issueTerm |否|  文章与Issue的映射条件 | pathname   | Blog Post ↔️ Issue Mapping |
-| defaultShowComment|否|默认显示评论     | (无，但默认显示)| \ |
+| defaultShowComment|否|默认显示评论     | true       |    \       |
+| service | 否  | 服务提供方 utterances/[beaudar](https://beaudar.lipk.org)|utterances|\|
 
 ### Page `frontmatter`
 
