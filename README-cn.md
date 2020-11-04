@@ -50,7 +50,7 @@ cnpm i --save @saintic/vuepress-plugin-utterances
 |  theme |  否  |  主题               | github-light | Theme|
 |  issueTerm |否|  文章与Issue的映射条件 | pathname   | Blog Post ↔️ Issue Mapping |
 | defaultShowComment|否|默认显示评论     | true       |    \       |
-| service | 否  | 服务提供方 utterances/[beaudar](https://beaudar.lipk.org)|utterances|\|
+| service | 否  | 服务提供方 utterances/[beaudar](https://beaudar.lipk.org)|utterances| \ |
 
 ### Page `frontmatter`
 
